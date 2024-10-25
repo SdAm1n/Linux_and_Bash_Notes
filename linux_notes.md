@@ -70,6 +70,7 @@
       - [Compress](#compress)
     - [Create Physical Copy of Storage](#create-physical-copy-of-storage)
       - [`dd` Command](#dd-command)
+    - [Zip and Unzip](#zip-and-unzip)
   - [7. File System Management](#7-file-system-management)
     - [Linux Device Naming System](#linux-device-naming-system)
     - [Device Partitioning](#device-partitioning)
@@ -692,6 +693,28 @@ dd if=inputfile of=outputfile
 dd if=/dev/sda of=/dev/sdb
 dd if=/dev/media of=/root/flashcopy bs=4096 conv:noerror # copy media to flashcopy
 ## bs: block size, conv: conversion
+```
+
+### Zip and Unzip
+
+```Bash
+zip -r archive_name.zip file1 file2 file3 # create zip archive
+unzip archive_name.zip # extract zip archive
+```
+
+- Unzipping multipart zip files: `.zip.001`, `.zip.002`, etc.
+
+```Bash
+cat test.zip* > ~/test.zip
+unzip ~/test.zip
+```
+
+- Unzipping multi-disc zip files: `.zip`, `.z01`, `.z02`, etc.
+
+```Bash
+zip -F (name of last part of archive, which will end with .zip, not .z0X) --out (desired output name of compiled archive, if has spaces put " marks around the name).zip
+
+unzip (full archive name, with " marks around it if has spaces).zip -d (destination folder directory, see first step)
 ```
 
 ---
