@@ -72,6 +72,7 @@
       - [Compress](./linux_notes.md#compress)
     - [Create Physical Copy of Storage](./linux_notes.md#create-physical-copy-of-storage)
       - [`dd` Command](./linux_notes.md#dd-command)
+    - [Zip and Unzip](./linux_notes.md#zip-and-unzip)
   - [7. File System Management](./linux_notes.md#7-file-system-management)
     - [Linux Device Naming System](./linux_notes.md#linux-device-naming-system)
     - [Device Partitioning](./linux_notes.md#device-partitioning)
