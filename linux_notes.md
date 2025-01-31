@@ -142,9 +142,10 @@
   - [14. Linux Firewall](#14-linux-firewall)
     - [IPTables](#iptables)
     - [UFW (Uncomplicated Firewall)](#ufw-uncomplicated-firewall)
-  - [15. Other Tools](#15-other-tools)
+  - [15. Other Tools and Miscellaneous](#15-other-tools-and-miscellaneous)
     - [`Curl`](#curl)
     - [Web Search From Terminal using ZSH](#web-search-from-terminal-using-zsh)
+    - [Hard and Symbolic Links](#hard-and-symbolic-links)
   - [16. Bash Scripting](#16-bash-scripting)
 
 ## 1. Basics
@@ -1354,7 +1355,7 @@ sudo ufw allow from <ip_address> to any port 22 # allow traffic from ip address 
 ---
 ---
 
-## 15. Other Tools
+## 15. Other Tools and Miscellaneous
 
 ### `Curl`
 
@@ -1376,6 +1377,8 @@ curl --data "log=admin&pwd=password" https://example.com # post data
 1. Install oh-my-zsh: `sudo apt install zsh`
 2. Enable web search plugin: `nano ~/.zshrc` and add `web-search` to plugins: `plugins=(web-search)` .
 3. Search like: `google search_term` or `bing search_term` etc.
+
+### [Hard and Symbolic Links](https://medium.com/@meghamohan/hard-link-and-symbolic-link-3cad74e5b5dc)
 
 ---
 ---
